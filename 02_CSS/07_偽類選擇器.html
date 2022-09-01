@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            將ul裡的第一個li設置為紅色
+        */
+        /* 
+        偽類
+
+        */
+
+        /* ul>li {
+            color: red
+        } */
+
+        /* ul>li:first-child {
+            color: red
+        } */
+
+        /* ul>li:last-child {
+            color: red
+        } */
+
+        /* ul>li:nth-child(1) {
+            color: red
+        } */
+
+        /* ul>li:nth-child(n) {
+            color: red
+        } */
+
+        /* ul>li:nth-child(odd) {
+            color: red
+        } */
+
+        ul>li:first-of-type {
+            color: red
+        }
+
+        /* :not() */
+        /* ul>li:not(:nth-child(3)) {
+            color: red
+        } */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <span>第零個</span>
+        <li>第一個</li>
+        <li>第二個</li>
+        <li>第三個</li>
+        <li>第四個</li>
+        <li>第五個</li>
+    </ul>
+</body>
+
+</html>
