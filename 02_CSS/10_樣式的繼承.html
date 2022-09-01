@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        樣式的繼承，我們為一個元素設置的樣式同時也會應用到他的後代元素上
+        
+        繼承是發生在祖先後代之間
+
+        繼承的設計是為了方便我們的開發，
+        利用繼承我們可以將通用的樣式統一
+        設置到共同的祖先元素上，
+        這樣只需設置一次即可讓所有的元素
+        都具有該樣式
+
+        注意，並不是所有樣式都會被繼承
+            比如 背景相關的，佈局相關 都不會被繼承
+        */
+
+        p {
+            color: red;
+        }
+
+        div {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        我是一個p元素
+        <span>我是p元素中的span</span>
+    </p>
+
+    <span>我是p元素外的span</span>
+
+    <div>
+        我是div
+        <span>
+            我是div中的span
+            <em>我是span中的em</em>
+        </span>
+    </div>
+</body>
+
+</html>
