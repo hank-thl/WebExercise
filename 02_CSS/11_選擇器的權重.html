@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box1 {
+            color: orange !important
+        }
+
+        div {
+            color: yellow !important
+        }
+
+        .red {
+            color: red;
+        }
+
+        /* 
+            樣式的衝突
+            選擇器越具體，優先級越高
+            !important(1,0,0,0,0) > inline style(1,0,0,0) > ID(0,1,0,0) > Class/偽類/屬性(0,0,1,0) > Element(0,0,0,1) > *(0,0,0,0)
+
+            繼承的樣式，沒有優先級
+        
+        */
+    </style>
+</head>
+
+<body>
+    <div style="color:green" id="box1" class="red">我是一個div</div>
+</body>
+
+</html>
