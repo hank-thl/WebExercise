@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            clear-box跑到浮動物件的後面
+        */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 960px;
+            background-color: blanchedalmond;
+            margin: auto;
+
+        }
+
+        .col {
+            width: 280px;
+            margin: 10px;
+            padding: 10px;
+            /* height: 200px; */
+            background-color: #ccc;
+            float: left;
+
+        }
+
+        .col img {
+            width: 100%;
+        }
+
+        .clear-box {
+            clear: both;
+            height: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="col">
+            <img src="http://fakeimg.pl/250x150/aaaaaa/eeeeee" class="float-img">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis libero consequatur odit, similique
+                eveniet eos, necessitatibus dolor assumenda iste rem nostrum. Velit voluptate veritatis id soluta est,
+                libero aperiam nulla!</p>
+        </div>
+        <div class="col">
+            <img src="http://fakeimg.pl/250x150/aaaaaa/eeeeee" class="float-img">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis libero consequatur odit, similique
+                eveniet eos, necessitatibus dolor assumenda iste rem nostrum. Velit voluptate veritatis id soluta est,
+                libero aperiam nulla!</p>
+        </div>
+        <div class="col">
+            <img src="http://fakeimg.pl/250x150/aaaaaa/eeeeee" class="float-img">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis libero consequatur odit, similique
+                eveniet eos, necessitatibus dolor assumenda iste rem nostrum. Velit voluptate veritatis id soluta est,
+                libero aperiam nulla!</p>
+        </div>
+        <div class="clear-box"></div>
+    </div>
+</body>
+
+</html>
