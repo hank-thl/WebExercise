@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+            vertical-align: bottom;
+        }
+        
+        .item-group {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+        }
+        .footer {
+            background-color: #333;
+            color: #aaa;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .title {
+            margin: 0 0px 20px;
+            padding: 30px 10px;
+            background-color: #ccc;
+            
+        }
+        .item {
+            margin: 0 10px 40px;
+        }
+
+        .title h2 {
+            text-align: center;
+            font-size: 46px;
+            margin: 20px 0;
+        }
+        
+        .title p {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .item .pic img {
+            width: 100%;
+        }
+
+        .item h3 {
+            font-size: 24px;
+            text-align: center;
+            margin: 20px 0;
+
+        }
+
+        .service {
+            background-color: #ffa;
+        }
+        .service .item {
+            margin: 0;
+        }
+
+        @media screen and (min-width:768px){
+            .item-group{ 
+                display: flex;
+            }
+            .service .item {
+                display: flex;
+            }
+            .service .item .pic,
+            .service .item .text{
+                width: 50%;
+                margin: 0;
+            }
+            .service .item .text{
+                padding: 0 20px;
+                display: flex;
+                box-sizing: border-box;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="https://picsum.photos/1400/400?random=1" alt="">
+    </div>
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam unde eligendi distinctio quod voluptas
+                    magnam, qui dolorem. Optio, similique possimus?</p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=11" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus sint illum corporis
+                            cupiditate consequuntur dolorum maiores maxime distinctio repellendus!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=12" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus sint illum corporis
+                            cupiditate consequuntur dolorum maiores maxime distinctio repellendus!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=13" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus sint illum corporis
+                            cupiditate consequuntur dolorum maiores maxime distinctio repellendus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="wrap">
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=13" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus sint illum corporis
+                            cupiditate consequuntur dolorum maiores maxime distinctio repellendus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam unde eligendi distinctio quod voluptas
+                    magnam, qui dolorem. Optio, similique possimus?</p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=21" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus sint illum corporis
+                            cupiditate consequuntur dolorum maiores maxime distinctio repellendus!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=22" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus sint illum corporis
+                            cupiditate consequuntur dolorum maiores maxime distinctio repellendus!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=23" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus sint illum corporis
+                            cupiditate consequuntur dolorum maiores maxime distinctio repellendus!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=24" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus sint illum corporis
+                            cupiditate consequuntur dolorum maiores maxime distinctio repellendus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; copyright 2022 by csscoke
+    </div>
+
+
+</body>
+
+</html>
