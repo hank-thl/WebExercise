@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #manu_control {
+            /* display: none; */
+            position: absolute;
+            z-index: -2;
+            opacity: 0;
+        }
+        .header {
+            position: relative;
+            height: 50px;
+            background-color: #aaa;
+        }
+        .logo {
+            height: 40px;
+            width: 60px;
+            margin-left: 10px;
+        }
+        .logo a {
+            display: block;
+            height: 40px;
+        }
+        .logo img {
+            vertical-align: middle;
+        }
+        .manu_btn {
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .manu_btn span {
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        .manu_btn::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 36px;
+            left: 2px;
+            background-color: #aaa;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            /*          x   y  模糊  色彩 */
+            box-shadow: 0  8px 0  #aaa,
+                        0  -8px 0  #aaa;
+        }
+        nav {
+            width: 80%;
+            height: calc(100vh - 50px);
+            background-color: #282923;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+            transition: .5s;
+        }
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #a6e22c;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a6e22c;
+        }
+        #manu_control:checked ~ .header nav {
+            left: 0;
+        }
+
+        @media screen and (min-width:768px) {
+            .header {
+                display: flex;
+                justify-content: space-between;
+                background-color:#282923 ;
+                align-items: center;
+            }
+            nav {
+                position: relative;
+                display: flex;
+                left: 0;
+                top:0;
+                height: auto;
+                width: auto;
+                background-color: transparent;
+            }
+            nav a {
+                border-bottom: none;
+
+            }
+            .manu_btn {
+                display: none;
+            }
+            .logo img {
+            display: block;
+        }
+    
+        
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="checkbox" name="" id="manu_control">
+    <div class="header">
+        
+        <h1 class="logo">
+            <a href="#"><img src="https://picsum.photos/60/40?random=1" alt=""></a>
+        </h1>
+        <label for="manu_control" class="manu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
+</body>
+
+</html>
